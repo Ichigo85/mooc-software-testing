@@ -24,6 +24,9 @@ class TwoNumbersSum {
             }
             result.add(i, total);
         }
+        if (complement > 0) {
+            result.add(Math.max(first.size(), second.size()), complement);
+        }
 
         Collections.reverse(result);
         return result;
